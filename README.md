@@ -46,23 +46,38 @@ Bem-vindo ao repositório de desafios de lógica de programação! Este reposit�
 
   Sua página web irá consumir os dados da API do Mercado Livre para realizar a busca de itens da sua loja online. Para realizar essas buscas, vocês precisarão consultar os seguintes endpoints:
 
+```
   Para listar as categorias disponíveis:
   Tipo da requisição: GET
     Endpoint: https://api.mercadolibre.com/sites/MLB/categories
+```
+```
+
   Para buscar por itens por termo:
   Tipo da requisição: GET
   Parâmetro de busca $QUERY (este parâmetro deve ser substituído pelo valor do campo de busca)
     Endpoint: https://api.mercadolibre.com/sites/MLB/search?q=$QUERY
+```
+```
+
   Para buscar itens por categoria:
   Tipo da requisição: GET
   Parâmetro de busca $CATEGORY_ID (este parâmetro deve ser substituído pelo ID da categoria selecionada)
     Endpoint: https://api.mercadolibre.com/sites/MLB/search?category=$CATEGORY_ID
+```
+```
+
   Para buscar itens de uma categoria por termo (vale ressaltar, que este endpoint não necessariamente precisa receber ambos os parâmetros para funcionar):
   Tipo da requisição: GET
   Parâmetro de busca $QUERY (este parâmetro deve ser substituído pelo valor do campo de busca)
   Parâmetro de busca $CATEGORY_ID (este parâmetro deve ser substituído pelo ID da categoria selecionada)
     Endpoint: https://api.mercadolibre.com/sites/MLB/search?category=$CATEGORY_ID&q=$QUERY
+```
+```
+
   Para buscar detalhes de um item especifico:
   Tipo de requisição: GET
   Parâmetro de busca $PRODUCT_ID (este parâmetro deve ser substituído pelo valor do campo de busca)
     Endpoint: https://api.mercadolibre.com/items/$PRODUCT_ID
+```
+
